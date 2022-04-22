@@ -1,0 +1,111 @@
+body {
+  background-color: #fff;
+}
+
+.container {
+  width: 1125px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.btn {
+  background: $main_color;
+  border-radius: 5px;
+  font-family: 'HindMadurai';
+  font-weight: 700;
+  font-size: 16px;
+  color: #FAFAFA;
+  margin:0px 0px 0px 0px;
+  padding:0px 0px 0px 0px;
+  &--long {
+    padding: 14px 50px;
+  }
+  &--left{
+    margin-left: 15px;
+  }
+}
+
+/*hedaer*/
+.header {
+  background-color: rgba(242, 206, 218, 0.3);
+  min-height: 650px;
+  padding-top: 10px;
+  padding-bottom: 213px;
+
+  &__content {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: $black_color;
+    margin-bottom: 9px;
+  }
+
+  &__title {
+    width: 665px;
+    font-family: 'FredokaOne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 70px;
+    color: $black_color;
+    opacity: 0.9;
+    margin-bottom: 27px;
+
+    span {
+      font-family: 'FredokaOne';
+      color: $main_color;
+    }
+  }
+
+  &__text {
+    width: 525px;
+    font-family: 'HindMadurai';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: $black_color;
+    opacity: 0.6;
+    margin-bottom: 45px;
+  }
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 196px;
+  position: relative;
+    &::before {
+      content: "";
+      width: 860px;
+      height: 743px;
+      background: url("/img/header_ice.png") no-repeat;
+      position: absolute;
+      top: 115px;
+      right: -240px;
+    }
+  &__logo{
+    margin-right: 265px;
+  }
+  &__list {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  &__item {
+    margin-right: 40px;
+    font-weight: 700;
+    font-size: 15px;
+
+    &:hover {
+      color: $main_color;
+      cursor: pointer;
+    }
+  }
+}
