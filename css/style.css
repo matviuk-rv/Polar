@@ -148,10 +148,25 @@ body {
   color: #FAFAFA;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
+  transition: 0.6s;
 }
 
 .btn--left {
   margin-left: 15px;
+}
+
+.btn:hover {
+  transition: 0.6s;
+  transform: scale(1.1);
+}
+
+@keyframes ice {
+  0% {
+    transform: rotate(-7deg);
+  }
+  100% {
+    transform: rotate(7deg);
+  }
 }
 
 /*hedaer*/
@@ -160,6 +175,12 @@ body {
   min-height: 650px;
   padding-top: 8px;
   padding-bottom: 213px;
+  transition: 2s;
+}
+
+.header:hover {
+  transition: 2s;
+  background-color: rgba(242, 206, 218, 0.7);
 }
 
 .header__content {
@@ -167,6 +188,12 @@ body {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
+  transition: 2s;
+}
+
+.header__content:hover .header__title span {
+  text-decoration: #D23166 underline double;
+  transition: 2s;
 }
 
 .header__subtitle {
@@ -220,6 +247,7 @@ body {
   position: absolute;
   top: 115px;
   right: -240px;
+  animation: ice 10s infinite alternate;
 }
 
 .main-menu__logo {
@@ -235,17 +263,26 @@ body {
   margin-right: 40px;
   font-weight: 700;
   font-size: 15px;
+  transition: 0.6s;
 }
 
 .main-menu__item:hover {
   color: #D23166;
   cursor: pointer;
+  transition: 0.6s;
+  transform: scale(1.15);
 }
 
 /*feature*/
 .feature {
   padding-top: 100px;
   padding-bottom: 100px;
+  transition: 2s;
+}
+
+.feature:hover {
+  transition: 2s;
+  background-color: rgba(242, 206, 218, 0.7);
 }
 
 .feature__list {
@@ -264,10 +301,17 @@ body {
   color: #000000;
   margin-right: 40px;
   font-family: 'HindMadurai';
+  transition: 0.6s;
+  cursor: pointer;
 }
 
 .feature__item:last-child {
   margin-right: 0px;
+}
+
+.feature__item:hover {
+  transition: 0.6s;
+  transform: scale(1.05);
 }
 
 .feature__img {
@@ -299,6 +343,12 @@ body {
   background-color: rgba(242, 206, 218, 0.3);
   padding-top: 142px;
   padding-bottom: 146px;
+  transition: 2s;
+}
+
+.advice:hover {
+  transition: 2s;
+  background-color: rgba(242, 206, 218, 0.7);
 }
 
 .advice__item {
