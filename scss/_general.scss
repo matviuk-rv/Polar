@@ -6,6 +6,7 @@ body {
   width: 1125px;
   margin: 0 auto;
   padding: 0 5px;
+  border:1px solid red;
 }
 
 .btn {
@@ -15,12 +16,14 @@ body {
   font-weight: 700;
   font-size: 16px;
   color: #FAFAFA;
-  margin:0px 0px 0px 0px;
-  padding:0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+
   &--long {
     padding: 14px 50px;
   }
-  &--left{
+
+  &--left {
     margin-left: 15px;
   }
 }
@@ -81,18 +84,21 @@ body {
   align-items: center;
   margin-bottom: 196px;
   position: relative;
-    &::before {
-      content: "";
-      width: 860px;
-      height: 743px;
-      background: url("../img/header_ice.png") no-repeat;
-      position: absolute;
-      top: 115px;
-      right: -240px;
-    }
-  &__logo{
+
+  &::before {
+    content: "";
+    width: 860px;
+    height: 743px;
+    background: url("../img/header_ice.png") no-repeat;
+    position: absolute;
+    top: 115px;
+    right: -240px;
+  }
+
+  &__logo {
     margin-right: 265px;
   }
+
   &__list {
     display: flex;
     flex-grow: 1;
@@ -109,3 +115,54 @@ body {
     }
   }
 }
+
+/*feature*/
+.feature {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    width:250px;
+    min-height: 200px;
+    padding:35px 25px 0px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #000000;
+    margin-right:40px;
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
+
+  &__img{
+    width:50px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    opacity: 0.6;
+  }
+}
+
