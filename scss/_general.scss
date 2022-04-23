@@ -6,10 +6,12 @@ body {
   width: 1125px;
   margin: 0 auto;
   padding: 0 5px;
-  border:1px solid red;
 }
 
 .btn {
+  width: 165px;
+  height: 49px;
+  text-align: center;
   background: $main_color;
   border-radius: 5px;
   font-family: 'HindMadurai';
@@ -18,10 +20,6 @@ body {
   color: #FAFAFA;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
-
-  &--long {
-    padding: 14px 50px;
-  }
 
   &--left {
     margin-left: 15px;
@@ -32,7 +30,7 @@ body {
 .header {
   background-color: rgba(242, 206, 218, 0.3);
   min-height: 650px;
-  padding-top: 10px;
+  padding-top: 8px;
   padding-bottom: 213px;
 
   &__content {
@@ -127,22 +125,23 @@ body {
   }
 
   &__item {
-    width:250px;
+    width: 250px;
     min-height: 200px;
-    padding:35px 25px 0px 25px;
+    padding: 35px 25px 0px 25px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     color: #000000;
-    margin-right:40px;
-    &:last-child{
+    margin-right: 40px;
+    font-family: 'HindMadurai';
+    &:last-child {
       margin-right: 0px;
     }
   }
 
-  &__img{
-    width:50px;
+  &__img {
+    width: 50px;
     height: 45px;
     display: flex;
     justify-content: center;
@@ -166,3 +165,46 @@ body {
   }
 }
 
+/*advice*/
+.advice {
+  background-color: rgba(242, 206, 218, 0.3);
+  padding-top: 142px;
+  padding-bottom: 146px;
+
+  &__item {
+    width: 452px;
+    padding-left:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #150101;
+    position:relative;
+    &::before{
+      content:"";
+      background:  url("../img/advice_sugar.png") no-repeat;
+      position:absolute;
+      width: 655px;
+      height: 657px;
+      top: -215px;
+      left: 527px;
+    }
+  }
+
+  &__title {
+    font-family: 'HindMadurai';
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 49px;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.6;
+    margin-bottom: 23px;
+  }
+}
